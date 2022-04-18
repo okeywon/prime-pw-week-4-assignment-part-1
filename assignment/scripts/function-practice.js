@@ -119,8 +119,22 @@ function sumAll( ) {
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+let numArray = [-3, 7, 0, -2, 5]
 
+function positives() {
+  let total = 0;
+  let i = 0;
+  for (let x in numArray) {
+    if (x > 0) {
+      i++;
+      {
+        return total += x;
+      }
+    }
+  }
+}
 
+console.log(positives(numArray));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
