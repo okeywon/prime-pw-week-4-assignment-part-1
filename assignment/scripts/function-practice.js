@@ -54,11 +54,8 @@ console.log("5 Checking my negative - False:", isPositive(-1));
 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3));
-console.log(isPositive(3));
 console.log( 'isPositive - should say false', isPositive(0));
-console.log(isPositive(0));
 console.log( 'isPositive - should say false', isPositive(-3));
-console.log(isPositive(-3));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -69,10 +66,8 @@ array="";
 function getLast(array) {
   return array[array.length - 1];
 }
-console.log("Return the last item in the list -> should say: 'the other.'")
-console.log(getLast(array1));
-console.log("Return if the list is empty -> should say: 'undefined.'")
-console.log(getLast(array2));
+console.log("Return the last item in the list -> should say: 'the other.'", getLast(array1));
+console.log("Return if the list is empty -> should say: 'undefined.'", getLast(array2));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -100,9 +95,7 @@ console.log("Should be false:", find(myArray, newValue));
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-let string = "apple";
-let letter = "a";
-let newLetter = "z";
+
 function isFirstLetter(letter, string) {
   if (string.startsWith(letter)) {
     return "True!";
@@ -110,10 +103,8 @@ function isFirstLetter(letter, string) {
     return "False."
   }
 }
-console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log(isFirstLetter(letter, string));
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
-console.log(isFirstLetter(newLetter, string));
+console.log('isFirstLetter - should say true', isFirstLetter('a', 'apple') );
+console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 let theArray = [1, 2, 3, 4, 5];
