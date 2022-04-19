@@ -137,3 +137,14 @@ console.log("Empty array:", positives(emptyArr));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// Write a function that takes an integer 'minutes' and converts it to seconds.
+
+function toSeconds(minutes) {
+  let seconds = 60;
+  return minutes *= seconds;
+}
+
+console.log("These are the moments:", toSeconds(2));
+console.log("These are the moments:", toSeconds(3));
+console.log("These are the moments:", toSeconds(5));
