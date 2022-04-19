@@ -132,19 +132,17 @@ console.log("Is this the answer you're looking for?", sumAll(theArray));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 let numArray = [-3, 7, 0, -2, 5];
+let emptyArr = [];
 
-function positives(numArray) {
-  let total = 0
+function positives(array) {
+  let total = 0;
   for (let x = 0; x < numArray.length; x++) {
-    if (numArray[x] > 0) {
-      total += numArray[x];
-    }
-    return total;
+      if(array[x] > 0) total += array[x]
   }
+    return total;
 }
-
 console.log("Adding positives only please:", positives(numArray));
-
+console.log("Empty array:", positives(emptyArr));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
