@@ -42,9 +42,9 @@ console.log(x);
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0 ){
-    return "True";
+    return true;
   } else {
-    return "False";
+    return false;
   }
 }
 
@@ -62,7 +62,7 @@ console.log( 'isPositive - should say false', isPositive(-3));
 
 let array1 = ["this", "that", "the other"];
 let array2 = [];
-array="";
+
 function getLast(array) {
   return array[array.length - 1];
 }
@@ -72,6 +72,9 @@ console.log("Return if the list is empty -> should say: 'undefined.'", getLast(a
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
+console.log("_____________________________Edan! I have many questions here! If you have time let me know.___________________________")
+
 let myArray = [1, 2, 3, 4, 5];
 let searchValue = 1;
 let newValue = 6; 
@@ -83,7 +86,7 @@ function find(array, value) {
     } else {
       return false;
     } 
-  }
+  } 
 }
 
 console.log("7 - Find the value of an array.")
@@ -98,9 +101,9 @@ console.log("Should be false:", find(myArray, newValue));
 
 function isFirstLetter(letter, string) {
   if (string.startsWith(letter)) {
-    return "True!";
+    return true;
   } else {
-    return "False."
+    return false;
   }
 }
 console.log('isFirstLetter - should say true', isFirstLetter('a', 'apple') );
@@ -112,12 +115,12 @@ let theArray = [1, 2, 3, 4, 5];
 function sumAll() {
   let sum = 0
   // TODO: loop to add items
-  for (let i = 0; i < theArray.length; i++) {
-    sum += theArray[i];
+  for (let num of theArray) {
+    sum += num;
   }
     return sum;
 }
-console.log("Is this the answer you're looking for?", sumAll(theArray));
+console.log("Is this the answer you're looking for?", (sumAll()));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
@@ -128,7 +131,7 @@ let emptyArr = [];
 function positives(array) {
   let total = 0;
   for (let x = 0; x < numArray.length; x++) {
-      if(array[x] > 0) total += array[x]
+    if(array[x] > 0) total += array[x]
   }
     return total;
 }
@@ -148,3 +151,36 @@ function toSeconds(minutes) {
 console.log("These are the moments:", toSeconds(2));
 console.log("These are the moments:", toSeconds(3));
 console.log("These are the moments:", toSeconds(5));
+
+console.log("_____________________________START HERE!!!!__________________________________");
+
+// function to determine how many minutes in a set number of hours
+function toMinutes( hours ) {
+    return hours * 60;
+}
+
+console.log("Calling toMinutes function, should say 600", toMinutes(10));
+
+// function that takes hours and multiplies by 60 minutes.
+
+// function to determine the 3rd side of a triangle === side 1 * side2 / 2
+
+function sideThree(a, b){
+  console.log( (a * b) / 2 );
+}
+
+console.log(sideThree(10, 10));
+
+
+
+console.log('----------------------START HERE-----------------------');
+
+let firstName = "Courtney";
+let lastName = "Azar";
+let favFood = "Pizza";
+
+function myIntro (a, b, c) {
+  console.log( "Hello, my name is:", (a + " " + b), "and I like", c, ".");
+}
+
+console.log(myIntro(firstName, lastName, favFood));
