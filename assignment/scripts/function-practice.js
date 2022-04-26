@@ -76,17 +76,16 @@ console.log("Return if the list is empty -> should say: 'undefined.'", getLast(a
 console.log("_____________________________Edan! I have many questions here! If you have time let me know.___________________________")
 
 let myArray = [1, 2, 3, 4, 5];
-let searchValue = 1;
+let searchValue = 3;
 let newValue = 6; 
 
 function find(array, value) {
   for (let i = 0; i < array.length; i++) {
-    if (array[i] == value) {
+    if (value === array[i]) {
       return true;
-    } else {
-      return false;
     } 
   } 
+    return false;
 }
 
 console.log("7 - Find the value of an array.")
